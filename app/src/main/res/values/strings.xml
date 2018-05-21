@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">baoku</string>
+    
+    <string name="app_fast_login_tool_bar_title">手机快捷登录</string>
+    <string name="app_fast_login_tool_bar_right">密码登录</string>
+    <string name="phone_numbar_edit">请输入手机号</string>
+    <string name="validata_code">请输入验证码</string>
+    <string name="get_validata_code">获取验证码</string>
+    <string name="fast_login_btn">登录</string>
+    <string name="app_narmal_login_tool_bar_title">手机和密码登录</string>
+    <string name="narmal_login_forget_password">忘记密码?</string>
+    <!---->
+    <string name="user_register_tool_bar_title">新用户注册</string>
+    <string name="fast_login_setting_password">首次登录需设置登录密码</string>
+    <string name="fast_input_login_password">请输入登录密码</string>
+    <string name="fast_login_btn_next_step">下一步</string>
+    <!--协议-->
+    <string name="agreement_tool_bar_title">用户注册及使用协议</string>
+    <!--index activity bottom-->
+    <string name="index_bottom_home_tab">首页</string>
+    <string name="index_bottom_community_tab">社区</string>
+    <string name="index_bottom_mall_tab">商城</string>
+    <string name="index_bottom_main_tab">我的</string>
+    <string name="index_bottom_popuwindown_tab">保单上传</string>
+    <!--index fragment grid view string-->
+    <string name="cha_xun">产品查询</string>
+    <string name="bao_dan">我的保单</string>
+    <string name="hu_dong">我的互动</string>
+    <string name="zi_chan">我的资产</string>
+    <string name="zhu_li">我的助理</string>
+    <string name="zhi_chang">我的职场</string>
+    <string name="ke_hu">我的客户</string>
+    <string name="bao_dan_guan_li">保单管理</string>
+    <string name="mei_ri_qian_dao">每日签到</string>
+    <!--personal tailor term-->
+    <string name="personal_tailor">私人定制</string>
+    <string name="evaluate">要测评</string>
+    <string name="make_money">要赚钱</string>
+    <string name="borrow_money">要借钱</string>
+    <!--community frg-->
+    <string name="da_ka_tui_jian">大咖推荐</string>
+    <string name="da_ka">大咖30位</string>
+    <string name="tab_one">热门推荐</string>
+    <string name="tab_two">最新动态</string>
+    <!--mall 积分商城-->
+    <string name="mall">积分商城</string>
+    <string name="money">9999</string>
+    <string name="integral">999</string>
+    <string name="exchange">兑换详情</string>
+    <string name="rmsp">热门商品</string>
+    <string name="splm_one">商品类目1</string>
+    <string name="splm_two">商品类目2</string>
+    <string name="splm_three">商品类目3</string>
+
+
+
+    <string name="main">我的</string>
+    <!--main  tab layout string-->
+    <string name="tab_xin_xi">信息</string>
+    <string name="tab_bao_zhang">保障</string>
+    <string name="tab_shou_quan">授权</string>
+    <string name="tab_zi_chan">资产</string>
+    <string name="tab_li_pei">理赔</string>
+ <!--信息 frg 布局  gride-->
+    <string name="ht">相关话题(提/问/关)</string>
+    <string name="gz">关注(关我/我关)</string>
+    <string name="sx">我的私信</string>
+    <string name="sc">收藏</string>
+    <string name="mp">名片(业绩墙/勋章墙)</string>
+    <string name="cz">成长体系</string>
+    <string name="yq">收到的邀请(发)</string>
+    <string name="zs">赞赏(被)</string>
+
+    <!--保障-->
+    <string name="bz">保障</string>
+    <string name="bdlb">保单列表</string>
+    <string name="tbgxst">投保关系视图</string>
+    <string name="jfqk">缴费情况</string>
+    <string name="bdfx">保单分析</string>
+    <!--授权-->
+    <string name="sq">授权</string>
+    <string name="fcsq">发出的授权</string>
+    <string name="jssq">接收的授权</string>
+    <string name="bzhk">保障互看</string>
+    <string name="bdsbjd">保单识别进度</string>
+    <!--资产-->
+    <string name="zc">资产</string>
+    <string name="zjh">资金户</string>
+    <string name="yhq">优惠券</string>
+    <string name="bdd">保单贷</string>
+    <string name="njtq">年金提取</string>
+    <!--理赔-->
+    <string name="lp">理赔</string>
+    <string name="rsxlpyg">人身险理赔预估</string>
+    <string name="cxlpyg">车险理赔预估</string>
+    <string name="personal">个人</string>
+    <string name="workplace">职场</string>
+    <string name="todo">TODO</string>
+    <string name="_500">500</string>
+    <!--index frg child activity-->
+    <string name="ps_title_bar">产品查询</string>
+    <string name="ps_albc">按类别查</string>
+    <string name="ps_agsc">按公司查</string>
+    <string name="ps_ywx">意外险</string>
+    <string name="ps_zjx">重疾险</string>
+    <string name="ps_ylx">医疗险</string>
+    <string name="ps_rsx">人寿险</string>
+    <string name="ps_lcx">理财险</string>
+</resources>

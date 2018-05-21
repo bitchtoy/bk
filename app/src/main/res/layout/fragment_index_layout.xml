@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              style="@style/linearLayout_vertical">
+    <android.support.v4.widget.NestedScrollView style="@style/nestedScrollView">
+        <LinearLayout style="@style/linearLayout_vertical">
+            <!--图片轮播-->
+            <com.jude.rollviewpager.RollPagerView
+                android:id="@+id/index_fragment_rollviewpage"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                app:rollviewpager_play_delay="3000"/>
+            <!--小广告-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/flipper_img"/>
+                <AdapterViewFlipper
+                    android:id="@+id/index_frag_flipper_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:animateFirstView="true"
+                    android:autoStart="true"
+                    android:flipInterval="1000"
+                    android:inAnimation="@animator/flipper_item_in"
+                    android:loopViews="true"
+                    android:outAnimation="@animator/flipper_item_out"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="1dp"
+                    android:drawableTop="@drawable/reward"
+                    android:gravity="center"
+                    android:text="@string/mei_ri_qian_dao"
+                    android:textSize="8sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"/>
+            <!--8个图标-->
+            <LinearLayout style="@style/linearLayout">
+                <TextView
+                    android:id="@+id/frg_index_ps"
+                    style="@style/indexFragmentGridView"
+                    android:drawableTop="@drawable/product_search"
+                    android:text="@string/cha_xun"/>
+
+                <TextView
+                    style="@style/indexFragmentGridView"
+                    android:drawableTop="@drawable/bao_dan"
+                    android:text="@string/bao_dan"/>
+
+                <TextView
+                    style="@style/indexFragmentGridView"
+                    android:drawableTop="@drawable/hu_dong"
+                    android:text="@string/hu_dong"/>
+
+                <TextView
+                    style="@style/indexFragmentGridView"
+                    android:drawableTop="@drawable/zi_chan"
+                    android:text="@string/zi_chan"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearLayout">
+                <TextView
+                    style="@style/indexFragmentGridView"
+                    android:drawableTop="@drawable/zhu_li"
+                    android:text="@string/zhu_li"/>
+                <TextView
+                    style="@style/indexFragmentGridView"
+                    android:drawableTop="@drawable/zhi_chang"
+                    android:text="@string/zhi_chang"/>
+                <TextView
+                    style="@style/indexFragmentGridView"
+                    android:drawableTop="@drawable/ke_hu"
+                    android:text="@string/ke_hu"/>
+                <TextView
+                    style="@style/indexFragmentGridView"
+                    android:drawableTop="@drawable/bao_dan_guan_li"
+                    android:text="@string/bao_dan_guan_li"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/validata_btn"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/personal_tailor"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/index_frag_evaluate"
+                    style="@style/personal_tailor"
+                    android:drawableBottom="@drawable/evaluate"
+                    android:text="@string/evaluate"/>
+                <View style="@style/fen_ge_xian_vertical"/>
+                <TextView
+                    style="@style/personal_tailor"
+                    android:drawableBottom="@drawable/make_money"
+                    android:text="@string/make_money"/>
+                <View style="@style/fen_ge_xian_vertical"/>
+                <TextView
+                    style="@style/personal_tailor"
+                    android:drawableBottom="@drawable/borrow_money"
+                    android:text="@string/borrow_money"/>
+            </LinearLayout>
+            <!--解决滑动时部分内容不显示 60dp-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

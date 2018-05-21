@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--TOOLBAR-->
+    <color name="toolBar">#FFFFFF</color>
+    <!--GET VALIDATA CODE BUTTON-->
+    <color name="validata_btn">#15A162</color>
+    <color name="edit_bottom_line">#DDDDDD</color>
+    <color name="narmal_login_forget_password">#C9C9C9</color>
+    <color name="line">#caf5f2f2</color>
+    <color name="da_ka">#888888</color>
+    <color name="community_unity_text_bg">#F0F0F0</color>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/tool_bar"/>
+    <LinearLayout
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/narmal_login_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fast_login_setting_password"/>
+        <EditText
+            android:theme="@style/EditTextBottomLine"
+            android:inputType="textPassword"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/padlock"
+            android:hint="@string/fast_input_login_password"/>
+        <Button
+            android:id="@+id/setting_password_next_step_btn"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/edit_bottom_line"
+            android:layout_gravity="center"
+            android:layout_marginTop="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login"
+            android:text="@string/fast_login_btn_next_step"
+            />
+    </LinearLayout>
+</LinearLayout>

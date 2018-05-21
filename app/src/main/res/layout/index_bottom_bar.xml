@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/index_radio_group_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/index_radio_home_bottom_bar"
+            style="@style/IndexBottomBar"
+            android:drawableTop="@drawable/index_bottom_home_tab"
+            android:text="@string/index_bottom_home_tab"
+            />
+        <RadioButton
+            android:id="@+id/index_radio_community_bottom_bar"
+            style="@style/IndexBottomBar"
+            android:drawableTop="@drawable/index_bottom_community_tab"
+            android:text="@string/index_bottom_community_tab"
+            />
+
+        <RadioButton
+            style="@style/IndexBottomBar"/>
+        <RadioButton
+            android:id="@+id/index_radio_mall_bottom_bar"
+            style="@style/IndexBottomBar"
+            android:drawableTop="@drawable/index_bottom_mall_tab"
+            android:text="@string/index_bottom_mall_tab"/>
+        <RadioButton
+            android:id="@+id/index_radio_main_bottom_bar"
+            style="@style/IndexBottomBar"
+            android:drawableTop="@drawable/index_bottom_main_tab"
+            android:text="@string/index_bottom_main_tab"/>
+    </RadioGroup>
+
+    <!--<ImageView-->
+    <!--android:background="#FAFAFA"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/index_radio_group_bottom_bar"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:src="@drawable/index_bottom_line"/>-->
+</merge>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              style="@style/linearLayout_vertical">
+    <include layout="@layout/tool_bar"/>
+    <View style="@style/fen_ge_xian_horizontal"/>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:fitsSystemWindows="true">
+                    <HorizontalScrollView
+                        app:layout_scrollFlags="scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:id="@+id/community_frg_card_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"/>
+                    </HorizontalScrollView>
+                    <LinearLayout style="@style/linearLayout_horizontal"
+                                  app:layout_scrollFlags="scroll">
+                        <TextView
+                            style="@style/unity_text" android:text="两字"/>
+                        <TextView
+                            style="@style/unity_text" android:text="两字"/>
+                        <TextView
+                            style="@style/unity_text" android:text="三字词"/>
+                        <TextView
+                            style="@style/unity_text" android:text="四个字词"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/linearLayout_horizontal"
+                                  app:layout_scrollFlags="scroll">
+                        <TextView
+                            style="@style/unity_text" android:text="两字"/>
+                        <TextView
+                            style="@style/unity_text" android:text="三字词"/>
+                        <TextView
+                            style="@style/unity_text" android:text="四个字词"/>
+                        <TextView
+                            style="@style/unity_text" android:text="两字"/>
+                    </LinearLayout>
+                    <View style="@style/fen_ge_xian_horizontal"
+                          app:layout_scrollFlags="scroll"/>
+                    <RelativeLayout style="@style/linearLayout_horizontal"
+                        android:layout_margin="10dp" app:layout_scrollFlags="scroll">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/da_ka_tui_jian"
+                            android:textColor="@color/da_ka"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@drawable/more"
+                            android:text="@string/da_ka"
+                            android:textColor="@color/da_ka"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+                    <android.support.v7.widget.RecyclerView
+                        app:layout_scrollFlags="scroll"
+                        android:id="@+id/community_frg_tj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        app:layout_scrollFlags="scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/line"/>
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/community_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        app:tabIndicatorColor="#15A162"
+                        app:tabMode="fixed"/>
+                    <View style="@style/fen_ge_xian_horizontal"/>
+                </android.support.design.widget.AppBarLayout>
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/community_frg_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                </android.support.v4.view.ViewPager>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
