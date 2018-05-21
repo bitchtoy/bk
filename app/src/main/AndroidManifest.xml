@@ -34,6 +34,7 @@
         <activity android:name=".fragment.indexfragment.childactivity.companyfrg.SResultActivity"/>
         <activity android:name=".fragment.indexfragment.childactivity.companyfrg.BRActivity"/>
         <activity android:name=".fragment.communityfragment.DetailsActivity"/>
+        <activity android:name=".fragment.communityfragment.AskActivity"/>
     </application>
 
 </manifest>

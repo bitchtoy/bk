@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.jaeger.library.StatusBarUtil;
 import com.sequoia.baoku.utils.netchangestate.InterNetObservable;
 import com.sequoia.baoku.utils.netchangestate.InterNetObserver;
 import com.sequoia.baoku.utils.netchangestate.NetWorkData;
@@ -38,6 +39,7 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseView
         progressDialog = new ProgressDialog(this);
         progressDialog.setCanceledOnTouchOutside(true);
         progressDialog.setCancelable(false);
+        StatusBarUtil.setTranslucent(this);
     }
     public abstract void initView(Bundle savedInstanceState);
     @Override

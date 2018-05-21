@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
               style="@style/linearLayout_vertical">
     <include layout="@layout/tool_bar"/>
     <View style="@style/fen_ge_xian_horizontal"/>
@@ -85,11 +86,21 @@
                         app:tabMode="fixed"/>
                     <View style="@style/fen_ge_xian_horizontal"/>
                 </android.support.design.widget.AppBarLayout>
+
                 <android.support.v4.view.ViewPager
                     android:id="@+id/community_frg_vp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
-                </android.support.v4.view.ViewPager>
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/flost_ask"
+            app:backgroundTint="@color/toolBar"
+            android:src="@drawable/ask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="80dp"
+            android:layout_marginEnd="20dp"
+            app:layout_behavior="com.sequoia.baoku.utils.FloationActionBehavie"/>
     </android.support.design.widget.CoordinatorLayout>
 </LinearLayout>

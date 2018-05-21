@@ -1,6 +1,8 @@
 package com.sequoia.baoku.fragment.communityfragment;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -8,7 +10,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -27,6 +28,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import butterknife.Unbinder;
 
 
@@ -36,7 +38,7 @@ import butterknife.Unbinder;
  * @funtion
  */
 
-public class CommunityFragment extends BaseFragment implements View.OnClickListener {
+public class CommunityFragment extends BaseFragment {
 
     @BindView(R.id.tool_bar_title)
     TextView mToolBarTitle;
@@ -53,6 +55,8 @@ public class CommunityFragment extends BaseFragment implements View.OnClickListe
     TabLayout mCommunityTab;
     @BindView(R.id.community_frg_vp)
     ViewPager mCommunityFrgVp;
+    @BindView(R.id.flost_ask)
+    FloatingActionButton flost_ask;
 
     private LinearLayoutManager mManager = null;
     private RecommendAdapter mAdapter = null;
@@ -83,7 +87,32 @@ public class CommunityFragment extends BaseFragment implements View.OnClickListe
             ImageView cardImg = view.findViewById(R.id.community_frg_card_img);
             cardImg.setImageResource(DeathLayoutData.cardImg[i]);
             view.setId(i);
-            view.setOnClickListener(this);
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int horizontalScrollViewId = v.getId();
+                    switch (horizontalScrollViewId) {
+                        case DeathLayoutData.HSV_ID_ONE:
+
+                            break;
+                        case DeathLayoutData.HSV_ID_TWO:
+
+                            break;
+                        case DeathLayoutData.HSV_ID_THREE:
+
+                            break;
+                        case DeathLayoutData.HSV_ID_FOUR:
+
+                            break;
+                        case DeathLayoutData.HSV_ID_FIVE:
+
+                            break;
+                        default:
+                            break;
+
+                    }
+                }
+            });
             mCommunityFrgCardImg.addView(view);
         }
         //da niu  tui jian
@@ -114,7 +143,7 @@ public class CommunityFragment extends BaseFragment implements View.OnClickListe
         List<Fragment> frgs = new ArrayList<>();
         frgs.add(RecommendFrg.getInstance());
         frgs.add(DynamicFrg.getInstance());
-        RecmPageAdapter vp = new RecmPageAdapter(mActivity.getSupportFragmentManager(),frgs);
+        RecmPageAdapter vp = new RecmPageAdapter(mActivity.getSupportFragmentManager(), frgs);
         mCommunityFrgVp.setAdapter(vp);
 
     }
@@ -126,32 +155,7 @@ public class CommunityFragment extends BaseFragment implements View.OnClickListe
     }
 
     //HSV VIEW ITEM ID LISTENNER
-    @Override
-    public void onClick(View view) {
-        int horizontalScrollViewId = view.getId();
-        switch (horizontalScrollViewId) {
-            case DeathLayoutData.HSV_ID_ONE:
 
-                break;
-            case DeathLayoutData.HSV_ID_TWO:
-
-                break;
-            case DeathLayoutData.HSV_ID_THREE:
-
-                break;
-            case DeathLayoutData.HSV_ID_FOUR:
-
-                break;
-            case DeathLayoutData.HSV_ID_FIVE:
-
-                break;
-            default:
-                break;
-
-        }
-
-
-    }
 
     //自定义tab layout 布局分布
     private View customTabView(int content, int imgId) {
@@ -164,5 +168,17 @@ public class CommunityFragment extends BaseFragment implements View.OnClickListe
     }
 
 
+    @OnClick(R.id.flost_ask)
+    public void onClick(View v) {
+        int id = v.getId();
+        switch (id){
+            case R.id.flost_ask:
+                Intent ask = new Intent(getContext(), AskActivity.class);
+                startActivity(ask);
+                break;
+             default:
+                 break;
 
+        }
+    }
 }
