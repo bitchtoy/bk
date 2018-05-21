@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/tool_bar"/>
+    <View style="@style/fen_ge_xian_horizontal"/>
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/user_ask_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:hint="至少输入5个字，最多输入60字"
+        android:maxLength="60"
+        android:gravity="top"
+        android:inputType="textMultiLine"/>
+<TextView
+    android:layout_marginEnd="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:id="@+id/edit_string_lenght"/>
+<LinearLayout
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="问题标签"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/label_check"/>
+</LinearLayout>
+
+</LinearLayout>
